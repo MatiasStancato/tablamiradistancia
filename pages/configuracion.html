@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de Tablas de Medidas</title>
+    <script src="../js/configuracion.js" defer></script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body onload="cargarConfiguracion()">
+    <h1 class="title">Configuracion de flecha</h1>
+    <label class="subLabel">Ingrese descripción de flecha</label>
+    <input class="inputNuevo" type="text" id="nuevoElemento" placeholder="Nueva descripcion"><br>
+    <button class="btn" onclick="agregarElemento()">Agregar Flecha</button>
+    
+    <table class="tablaConfiguracion" id="tablaConfiguracion">
+        <thead>
+            <tr class="tr">
+                <th>Flecha</th>
+                <th>Distancia</th>
+                <th>Posición</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas dinámicas aquí -->
+        </tbody>
+    </table>
+    <button class="btn" onclick="guardarConfiguracion()">Guardar Configuración</button>
+    <br>
+    <a class="btn-iratabla" href="../index.html">IR A LA TABLA</a></div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    margin:10% auto;
+}
+.subLabel{
+    margin: 5% ;
+    font-size: 20px;
+}
+.option{
+    font-size: 20px;
+    margin: 3%;
+}
+.tableMedidas {
+    width: max-content;
+    border-collapse: collapse;
+    margin: 5% auto;
+    border: 1px solid black;
+
+}
+.tableMedidas th{
+    width: 50%;
+
+}
+.tableMedidas td{
+    width: 50%;
+
+}
+.btn-pgconfig, .btn-iratabla{
+    text-decoration: none;
+    width: max-content;
+    height: max-content;
+    border: 2px solid #0022FF;
+    padding: 5px;
+    background-color: #00aaFF;
+    color: white;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+    left: 7%;
+    font-size: 25px;
+}
+.inputNuevo{
+    margin: 5%;
+    font-size:20px
+}
+.btn{
+    font-size: 20px;
+    margin: 5% ;
+    background-color: #00AA00;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border:2px solid #008800;
+}
+
+.tablaConfiguracion th{
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+    font-size: 16px;
+}
+.tablaConfiguracion td{
+    display: inline-block;
+    width: 25%;
+    height: 80px;
+    align-self: center;
+    margin: auto;
+}
+td button{
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+.tablaConfiguracion input{
+    width: 30px;
+}
+.tablaConfiguracion{
+    border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+}
+
+.tablaConfiguracion th, td {
+    border: 1px solid black;
+}
+.btn-iratabla{
+    left:25%
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}

@@ -52,6 +52,45 @@ function cargarElementos() {
         option.textContent = elemento;
         selectElemento.appendChild(option);
     }
+
+    const listadoFlechas = document.getElementById("listadoFlechas");
+    listadoFlechas.innerHTML = "";
+    for (let elemento in tablasDeMedidas) {
+        const div = document.createElement("div");
+        const h3 = document.createElement("h3");
+        h3.textContent = elemento;
+        div.appendChild(h3);
+
+        const tabla = document.createElement("table");
+        tabla.classList.add("tableMedidas");
+
+        const thead = document.createElement("thead");
+        const trHead = document.createElement("tr");
+        const thDistancia = document.createElement("th");
+        thDistancia.textContent = "Distancia";
+        const thPosicion = document.createElement("th");
+        thPosicion.textContent = "Posición de la Mira";
+        trHead.appendChild(thDistancia);
+        trHead.appendChild(thPosicion);
+        thead.appendChild(trHead);
+        tabla.appendChild(thead);
+
+        const tbody = document.createElement("tbody");
+        tablasDeMedidas[elemento].forEach(medida => {
+            const tr = document.createElement("tr");
+            const tdDistancia = document.createElement("td");
+            tdDistancia.textContent = medida.distancia;
+            const tdPosicion = document.createElement("td");
+            tdPosicion.textContent = medida.posicion;
+            tr.appendChild(tdDistancia);
+            tr.appendChild(tdPosicion);
+            tbody.appendChild(tr);
+        });
+        tabla.appendChild(tbody);
+
+        div.appendChild(tabla);
+        listadoFlechas.appendChild(div);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', cargarElementos);

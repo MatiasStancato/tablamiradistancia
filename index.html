@@ -7,29 +7,35 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+
+
     <h1 class="title">Tabla de Medidas</h1>
+
+    <h2 class="subtitle">Buscar por Tabla</h2>
     <label class="subLabel" for="elemento">Seleccione una flecha:</label>
     <br>
-    <select  class="option" id="elemento" onchange="mostrarTabla()">
-        <option  value="">Seleccione</option>
+    <select class="option" id="elemento" onchange="mostrarTabla()">
+        <option value="">Seleccione</option>
         <!-- Opciones dinámicas -->
     </select>
 
-    <table class="tableMedidas" id="tablaMedidas" style="display:none;">
-        <thead>
-            <tr>
-                <th>Distancia</th>
-                <th>Posición de la Mira</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Filas dinámicas -->
-        </tbody>
-    </table>
+    <div>
+        <label class="subLabel" for="distancia">Ingrese distancia:</label>
+        <br>
+        <input class="option1" type="number" id="distancia">
+        <button  class="btn" onclick="buscarPosicion()">Buscar</button>
+        <p class="posicionMira" id="posicionMira"></p>
+    </div>
+
+    <h2 class="subtitle">Listado de todas las flechas con sus tablas</h2>
+    <div id="listadoFlechas">
+        <!-- Listado dinámico de flechas -->
+    </div>
+
+
 
     <div>
-        <a class="btn-pgconfig" href="./pages/configuracion.html">IR A LA CONFIGURACION
-        </a>
+        <a class="btn-pgconfig" href="./pages/configuracion.html">IR A LA CONFIGURACION</a>
     </div>
 
     <script src="./js/scripts.js"></script>

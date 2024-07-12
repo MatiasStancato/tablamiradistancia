@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body onload="cargarConfiguracion()">
-    <h1 class="title">Configuracion de flecha</h1>
+    <div class="confContainer">
+        <h1 class="title">Configuracion de flecha</h1>
     <label class="subLabel">Ingrese descripción de flecha</label>
     <input class="inputNuevo" type="text" id="nuevoElemento" placeholder="Nueva descripcion"><br>
-    <button class="btn" onclick="agregarElemento()">Agregar Flecha</button>
-    
+    <button class="btn btnadd" onclick="agregarElemento()">Agregar Flecha</button>
     <table class="tablaConfiguracion" id="tablaConfiguracion">
         <thead>
             <tr class="tr">
@@ -22,12 +22,16 @@
                 <th>Acciones</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="tbody">
             <!-- Filas dinámicas aquí -->
         </tbody>
     </table>
-    <button class="btn" onclick="guardarConfiguracion()">Guardar Configuración</button>
+    <button class="btn btnadd" onclick="guardarConfiguracion()">Guardar Configuración</button>
     <br>
     <a class="btn-iratabla" href="../index.html">IR A LA TABLA</a></div>
+</div>
+
+    
+
 </body>
 </html>

@@ -11,32 +11,30 @@
 
     <h1 class="title">Tabla de Medidas</h1>
 
-    <h2 class="subtitle">Buscar por Tabla</h2>
-    <label class="subLabel" for="elemento">Seleccione una flecha:</label>
-    <br>
-    <select class="option" id="elemento" onchange="mostrarTabla()">
-        <option value="">Seleccione</option>
-        <!-- Opciones dinámicas -->
-    </select>
-
-    <div>
-        <label class="subLabel" for="distancia">Ingrese distancia:</label>
+    <div class="buscadorMedida">
+        <h2 class="subtitle">Buscar por Tabla</h2>
+        <label class="subLabel" for="elemento">Seleccione una flecha:</label>
         <br>
-        <input class="option1" type="number" id="distancia">
-        <button  class="btn" onclick="buscarPosicion()">Buscar</button>
-        <p class="posicionMira" id="posicionMira"></p>
+        <select class="option" id="elemento" onchange="mostrarTabla()">
+            <!-- Opciones dinámicas -->
+        </select>
+            <label class="subLabel" for="distancia">Ingrese distancia:</label>
+            <br> 
+            <input class="option1" type="number" id="distancia"><br>
+            <button  class="btn" onclick="buscarPosicion()">Buscar</button>
+            <p class="posicionMira" id="posicionMira"></p>
+    </div>
+    
+    <div class="tablaIndex">
+        <h2 class="subtitle">Listado de todas las flechas</h2>
+        <div id="listadoFlechas">
+            
+            <!-- Listado dinámico de flechas -->
+           
+        </div> <a class="btn-pgconfig" href="./pages/configuracion.html">IR A LA CONFIGURACION</a>
+            
     </div>
 
-    <h2 class="subtitle">Listado de todas las flechas</h2>
-    <div id="listadoFlechas">
-        <!-- Listado dinámico de flechas -->
-    </div>
-
-
-
-    <div>
-        <a class="btn-pgconfig" href="./pages/configuracion.html">IR A LA CONFIGURACION</a>
-    </div>
 
     <script src="./js/scripts.js"></script>
 </body>

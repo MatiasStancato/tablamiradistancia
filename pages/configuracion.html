@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configuración de Tablas de Medidas</title>
-    <script src="../js/configuracion.js" defer></script>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body onload="cargarConfiguracion()">
     <div class="confContainer">
         <h1 class="title">Configuracion de flecha</h1>
-    <label class="subLabel">Ingrese descripción de flecha</label>
-    <input class="inputNuevo" type="text" id="nuevoElemento" placeholder="Nueva descripcion"><br>
-    <button class="btn btnadd" onclick="agregarElemento()">Agregar Flecha</button>
-    <table class="tablaConfiguracion" id="tablaConfiguracion">
-        <thead>
-            <tr class="tr">
-                <th>Flecha</th>
-                <th>Distancia</th>
-                <th>Posición</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody class="tbody">
-            <!-- Filas dinámicas aquí -->
-        </tbody>
-    </table>
-    <button class="btn btnadd" onclick="guardarConfiguracion()">Guardar Configuración</button>
-    <br>
-    <a class="btn-iratabla" href="../index.html">IR A LA TABLA</a></div>
-</div>
+        <label class="subLabel">Ingrese descripción de flecha</label>
+        <input class="inputNuevo" type="text" id="nuevoElemento" placeholder="Nueva descripcion"><br>
+        <button class="btn btnadd" onclick="agregarElemento()">Agregar Flecha</button>
+        <table class="tablaConfiguracion" id="tablaConfiguracion">
+            <thead>
+                <tr class="tr">
+                    <th>Flecha</th>
+                    <th>Distancia</th>
+                    <th>Posición</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                <!-- Filas dinámicas aquí -->
+            </tbody>
+        </table>
+        <button class="btn btnadd" onclick="guardarConfiguracion()">Guardar Configuración</button>
+        <br>
+        
+        <div class="tablaIndex">
+            <h2 class="subtitle">Listado de todas las flechas</h2>
+            <div id="listadoFlechas">
 
+                <!-- Listado dinámico de flechas -->
+
+
+
+            </div>
+        </div>
+        <a class="btn-iratabla" href="../index.html">IR A LA TABLA</a>
+    </div>
+    </div>
+    <script src="../js/configuracion.js" defer></script>
     
-
+    
 </body>
+
 </html>

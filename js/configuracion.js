@@ -16,7 +16,7 @@ function cargarConfiguracion() {
             celdaElemento.textContent = elemento;
             celdaDistancia.innerHTML = `<input type="number" class="distancia" value="${medida.distancia}">`;
             celdaPosicion.innerHTML = `<input type="text" class="posicion" value="${medida.posicion}">`;
-            botonEliminar.textContent = "Eliminar";
+            botonEliminar.textContent = "X";
             botonEliminar.onclick = function() {
                 eliminarElemento(fila, elemento, index);
             };
